@@ -11,7 +11,14 @@ def encode(phrase):
 
 
 def decode(phrase):
-    pass
+    #decodes whatever is inputted with option 1-neha bangalore
+    result = ''
+    for i in phrase:
+        i = int(i) - 3
+        if i < 0:
+            i += 10
+        result += f"{i}"
+    return result
 
 
 def main():
